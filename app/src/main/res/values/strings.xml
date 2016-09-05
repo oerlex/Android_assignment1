@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">as223th_assignment1</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    //RANDOMIZER STUFF
+    <string name="randomize">Randomize</string>
+    //BMI STUFF
+    <string name="reset">Reset</string>
+    <string name="calculate">Calculate</string>
+    <string name="labelHeight">Type height in cm</string>
+    <string name="labelWeight">Type weight in kg</string>
+    <string name="labelTitle">BMI Calculator</string>
+
+    //COUNTRY STUFF
+    <string name="addCountry">ADD</string>
+    <string name="dateCountry">Add a date</string>
+    <string name="nameCountry">Add a name</string>
+    <string name="titleCounty">Add Country</string>
+
+    //WEATHER STUFF
+    <string name="settingsWeather">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
