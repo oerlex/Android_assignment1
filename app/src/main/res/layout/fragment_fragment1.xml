@@ -12,4 +12,28 @@
         android:layout_centerVertical="true"
         android:textSize="26dp"
         android:text="TextView" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageViewBeer1"
+                android:background="@drawable/norrlands"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewBeer1"
+                android:text="fiaufhaoifjaid"/>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
 </RelativeLayout>

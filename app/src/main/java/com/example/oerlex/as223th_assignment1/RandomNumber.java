@@ -2,8 +2,6 @@ package com.example.oerlex.as223th_assignment1;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.example.oerlex.as223th_assignment1.beer.BeerFragment;
 import com.example.oerlex.as223th_assignment1.countryList.CountryList;
 import com.example.oerlex.as223th_assignment1.weather.VaxjoWeather;
 
@@ -88,10 +87,14 @@ public class RandomNumber extends AppCompatActivity implements NavigationView.On
             Intent intent = new Intent(this,CountryList.class);
             this.startActivityForResult(intent,1);
         } else if (id == R.id.nav_weather) {
-            Intent intent = new Intent(this,VaxjoWeather.class);
-            this.startActivityForResult(intent,1);
-
+            Intent intent = new Intent(this, VaxjoWeather.class);
+            this.startActivityForResult(intent, 1);
+        } else if (id == R.id.nav_beer) {
+            Intent intent = new Intent(this, BeerFragment.class);
+            this.startActivityForResult(intent, 1);
         }
+
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

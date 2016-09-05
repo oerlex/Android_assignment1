@@ -3,7 +3,7 @@
     package="com.example.oerlex.as223th_assignment1">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -31,8 +31,9 @@
             android:name=".weather.VaxjoWeather"
             android:parentActivityName=".RandomNumber" />
         <activity
-            android:name=".BeerFragment"
-            android:parentActivityName=".RandomNumber"/>
+            android:name=".beer.BeerFragment"
+            android:parentActivityName=".RandomNumber" />
+        <activity android:name=".beer.Fragment3"></activity>
     </application>
 
 </manifest>
