@@ -52,24 +52,18 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.MyViewHo
         holder.date.setText(weatherForecast.getStartYYMMDD());
         holder.rain.setText(String.valueOf(weatherForecast.getRain())+"mm/h");
 
-        switch (weatherForecast.getWeatherName()){
-            case "Lettskyet": holder.image.setImageResource(R.drawable.cloudy);
-                break;
-            case "Skyet":holder.image.setImageResource(R.drawable.cloudy_1);
-                break;
-            case "Klarvær": holder.image.setImageResource(R.drawable.sun);
-                break;
-            case "Lette regnbyger": holder.image.setImageResource(R.drawable.rain_1);
-                break;
-            case "Regnbyger": holder.image.setImageResource(R.drawable.rain_1);
-                break;
-            case "Kraftige regnbyger": holder.image.setImageResource(R.drawable.rain_1);
-                break;
-            case "Delvis skyet": holder.image.setImageResource(R.drawable.cloudy_1);
-                break;
-
+        int weatherCode = weatherForecast.getWeatherCode();
+        if(weatherCode==1){
+            holder.image.setImageResource(R.drawable.sun);
+        }else if(weatherCode==2 || weatherCode==3){
+            holder.image.setImageResource(R.drawable.cloudy_1);
+        }else if(weatherCode==4){
+            holder.image.setImageResource(R.drawable.cloudy);
+        }else if(weatherCode==40 || weatherCode==5 || weatherCode==41 || weatherCode==24){
+            holder.image.setImageResource(R.drawable.rain_1);
+        }else{
+            holder.image.setImageResource(R.drawable.cloudy);
         }
-
     }
 
 

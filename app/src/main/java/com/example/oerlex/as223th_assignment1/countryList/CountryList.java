@@ -35,7 +35,6 @@ public class CountryList extends AppCompatActivity {
         recyclerView.setAdapter(mAdapter);
 
         prepareCountryData("Sweden","2014");
-        prepareCountryData("Dongland","2016");
     }
 
     private void prepareCountryData(String name, String date) {

@@ -28,12 +28,15 @@
             android:name=".countryList.CountryList"
             android:parentActivityName=".RandomNumber" />
         <activity
+            android:name=".countryList.CountryInput"
+            android:parentActivityName=".countryList.CountryList" />
+        <activity
             android:name=".weather.VaxjoWeather"
             android:parentActivityName=".RandomNumber" />
         <activity
             android:name=".beer.BeerFragment"
             android:parentActivityName=".RandomNumber" />
-        <activity android:name=".beer.Fragment3"></activity>
+
     </application>
 
 </manifest>

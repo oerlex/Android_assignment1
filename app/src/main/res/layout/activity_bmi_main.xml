@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/labelWeight"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:id="@+id/weightLabel" />
     <EditText
         android:layout_width="match_parent"
@@ -37,7 +37,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/labelHeight"
         android:id="@+id/heightLabel"
-        android:textSize="25sp"/>
+        android:textSize="20sp"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -48,29 +48,27 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:text="@string/calculate"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:id="@+id/button"
         android:onClick="calculate"
         android:layout_gravity="top" />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:textSize="50sp"
-            android:textAlignment="center"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/result"
-            android:gravity="center" />
-    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="50sp"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/result"
+        android:gravity="center" />
+
     <Button
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="100dp"
         android:text="@string/reset"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:id="@+id/button2"
-        android:onClick="reset"/>
+        android:onClick="reset"
+        android:gravity="center"
+        />
 </LinearLayout>
